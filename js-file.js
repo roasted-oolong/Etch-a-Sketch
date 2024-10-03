@@ -1,1 +1,1 @@
-const block = document.createElement('div');
+const block = document.createElement('div').classList.add('block');
