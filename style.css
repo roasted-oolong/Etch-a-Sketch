@@ -11,7 +11,7 @@
 }
 
 div#container {
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
     border: solid black 5px; /*delete later. nest container inside section*/
     width: 500px;
