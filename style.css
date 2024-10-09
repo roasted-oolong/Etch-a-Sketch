@@ -10,11 +10,13 @@
     padding: 0;
 }
 
-#container {
+div#container {
     display: flexbox;
-    
+    border: solid black 5px; /*delete later. nest container inside section*/
+    width: 500px;
+    height: 500px;
 }
 
 .block {
-
+ border: solid black 5px;
 }
