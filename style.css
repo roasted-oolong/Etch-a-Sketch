@@ -12,11 +12,12 @@
 
 div#container {
     display: flexbox;
+    flex-wrap: wrap;
     border: solid black 5px; /*delete later. nest container inside section*/
     width: 500px;
     height: 500px;
 }
 
 .block {
- border: solid black 5px;
+    border: solid black 1px;
 }
