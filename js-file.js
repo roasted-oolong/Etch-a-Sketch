@@ -5,6 +5,8 @@ const gridSize = gridNumber * gridNumber;
 function createGrid() {
     let i = 0;
     while (i < gridSize) {
+        container.innerHTML = ''; //reset container
+        
         const block = document.createElement('div');
         block.classList.add('block');
         block.style.width = `${100/gridNumber}%`;
