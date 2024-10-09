@@ -1,4 +1,4 @@
-const block = document.createElement('div').classList.add('block');
+const block = document.createElement('div.block');
 const container = document.querySelector('#container')
 
 let gridNumber = 16; //default
