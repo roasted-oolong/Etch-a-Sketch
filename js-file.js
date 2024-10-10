@@ -17,7 +17,7 @@ function createGrid() {
 }
 createGrid();
 
-const blocks = document.querySelectorAll('block');
+const blocks = document.querySelectorAll('.block');
 blocks.forEach((block) => {
     block.addEventListener('onmouseover', () => {
         block.style.backgroundColor = 'blue';
