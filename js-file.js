@@ -4,7 +4,7 @@ let gridNumber = 16; //default
 const gridSize = gridNumber * gridNumber;
 function createGrid() {
     container.innerHTML = ''; //reset container
-    
+
     let i = 0;
     while (i < gridSize) {
                 const block = document.createElement('div');
@@ -17,3 +17,6 @@ function createGrid() {
 }
 createGrid();
 
+container.forEach((block) => addEventListener('mouseover', () => {
+    block.style.backgroundColor = 'blue';
+}))
