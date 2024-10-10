@@ -7,7 +7,7 @@ function createGrid() {
 
     let i = 0;
     while (i < gridSize) {
-                const block = document.createElement('div');
+        const block = document.createElement('div');
         block.classList.add('block');
         block.style.width = `${100/gridNumber}%`;
         block.style.height = `${100/gridNumber}%`
@@ -17,6 +17,9 @@ function createGrid() {
 }
 createGrid();
 
-container.forEach((block) => addEventListener('mouseover', () => {
-    block.style.backgroundColor = 'blue';
-}))
+const blocks = document.querySelectorAll('block');
+blocks.forEach((block) => {
+    block.addEventListener('onmouseover', () => {
+        block.style.backgroundColor = 'blue';
+})
+})
