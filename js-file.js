@@ -3,11 +3,11 @@ const container = document.querySelector('#container')
 let gridNumber = 16; //default
 const gridSize = gridNumber * gridNumber;
 function createGrid() {
+    container.innerHTML = ''; //reset container
+    
     let i = 0;
     while (i < gridSize) {
-        container.innerHTML = ''; //reset container
-        
-        const block = document.createElement('div');
+                const block = document.createElement('div');
         block.classList.add('block');
         block.style.width = `${100/gridNumber}%`;
         block.style.height = `${100/gridNumber}%`
@@ -16,3 +16,4 @@ function createGrid() {
     }
 }
 createGrid();
+
