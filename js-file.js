@@ -23,3 +23,5 @@ blocks.forEach((block) => {
         block.style.backgroundColor = 'blue';
 })
 })
+
+const btnChangeGrid = document.querySelector('#change-grid');
