@@ -25,3 +25,7 @@ blocks.forEach((block) => {
 })
 
 const btnChangeGrid = document.querySelector('#change-grid');
+btnChangeGrid.addEventListener('click', () => {
+    const newGrid = window.prompt("Enter New Grid Number" , "")
+    gridNumber = newGrid;
+})
