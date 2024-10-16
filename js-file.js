@@ -1,9 +1,9 @@
 const container = document.querySelector('#container')
 
 let gridNumber = 16; //default
-const gridSize = gridNumber * gridNumber;
 function createGrid() {
     container.innerHTML = ''; //reset container
+    const gridSize = gridNumber * gridNumber;
 
     let i = 0;
     while (i < gridSize) {
