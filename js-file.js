@@ -14,15 +14,15 @@ function createGrid() {
         container.appendChild(block);
         i++
     }
+
+    const blocks = document.querySelectorAll('.block');
+    blocks.forEach((block) => {
+        block.addEventListener('mouseover', () => {
+            block.style.backgroundColor = 'blue';
+    })
+    })
 }
 createGrid();
-
-const blocks = document.querySelectorAll('.block');
-blocks.forEach((block) => {
-    block.addEventListener('mouseover', () => {
-        block.style.backgroundColor = 'blue';
-})
-})
 
 const btnChangeGrid = document.querySelector('#change-grid');
 btnChangeGrid.addEventListener('click', () => {
